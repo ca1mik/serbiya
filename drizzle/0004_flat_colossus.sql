@@ -1,0 +1,1 @@
+ALTER TABLE "shipments" ADD COLUMN "preparation_state" varchar(20) DEFAULT 'PENDING' NOT NULL;

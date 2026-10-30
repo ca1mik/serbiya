@@ -1,0 +1,4 @@
+Broj otpremnice,Eksterni ID,Kupac,Kupac PIB,Adresa isporuke,Datum otpreme,Šifra artikla,Opis,Količina,JM
+ERR-001,ERR-ERP-001,Pilot Kupac 4 d.o.o.,,"Dunavska 10, Novi Sad",2026-10-01,ART-004,Spojnica,12,kom
+ERR-002,ERR-ERP-002,Pilot Kupac 5 d.o.o.,DEMO-PIB-905,,2026-10-02,ART-005,Pakovanje robe,3,kutija
+ERR-003,ERR-ERP-003,Pilot Kupac 6 d.o.o.,DEMO-PIB-906,"Radna 18, Niš",2026-10-03,SKU-DEMO-FAIL,Demo rejection,6,kom

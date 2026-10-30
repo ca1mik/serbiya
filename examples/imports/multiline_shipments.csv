@@ -1,0 +1,4 @@
+Broj otpremnice,Eksterni ID,Kupac,Kupac PIB,Adresa isporuke,Datum otpreme,Šifra artikla,Opis,Količina,JM
+MULTI-001,MULTI-ERP-001,Pilot Kupac 1 d.o.o.,DEMO-PIB-901,"Dunavska 10, Novi Sad",2026-10-01,ART-001,Vijak pocinkovani,12,kom
+MULTI-001,,,,,,ART-002,Matica pocinkovana,24,kom
+MULTI-002,MULTI-ERP-002,Pilot Kupac 2 d.o.o.,DEMO-PIB-902,"Industrijska 5, Beograd",2026-10-02,ART-003,Pločasti materijal,3,kg

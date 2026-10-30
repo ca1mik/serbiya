@@ -1,0 +1,4 @@
+Broj otpremnice,Eksterni ID,Kupac,Kupac PIB,Adresa isporuke,Datum otpreme,Šifra artikla,Opis,Količina,JM
+PILOT-001,PILOT-ERP-001,Pilot Kupac 1 d.o.o.,DEMO-PIB-901,"Dunavska 10, Novi Sad",2026-10-01,ART-001,Vijak pocinkovani,12,kom
+PILOT-002,PILOT-ERP-002,Pilot Kupac 2 d.o.o.,DEMO-PIB-902,"Industrijska 5, Beograd",2026-10-02,ART-002,Pločasti materijal,3,kg
+PILOT-003,PILOT-ERP-003,Pilot Kupac 3 d.o.o.,DEMO-PIB-903,"Radna 18, Niš",2026-10-03,ART-003,Industrijska boja,6,pak

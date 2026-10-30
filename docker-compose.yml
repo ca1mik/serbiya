@@ -1,0 +1,53 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: otprema
+      POSTGRES_PASSWORD: otprema
+      POSTGRES_DB: otprema
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U otprema -d otprema"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  init:
+    build: .
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://otprema:otprema@db:5432/otprema
+    command: ["sh", "-c", "pnpm db:migrate && pnpm db:seed"]
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: "no"
+  app:
+    build: .
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://otprema:otprema@db:5432/otprema
+      APP_URL: http://localhost:3000
+    ports:
+      - "3000:3000"
+    depends_on:
+      init:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/api/ready').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 4s
+      retries: 10
+      start_period: 30s
+  worker:
+    build: .
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://otprema:otprema@db:5432/otprema
+    command: ["pnpm", "worker"]
+    depends_on:
+      init:
+        condition: service_completed_successfully
+    restart: unless-stopped
+volumes:
+  pgdata:

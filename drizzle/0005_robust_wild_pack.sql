@@ -1,0 +1,1 @@
+ALTER TABLE "import_jobs" ALTER COLUMN "status" SET DATA TYPE varchar(30);

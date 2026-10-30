@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="sr-Latn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OtpremaOps — informativna ponuda</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #e8edf1;
+        color: #182a3a;
+        font:
+          12px/1.55 Arial,
+          Helvetica,
+          sans-serif;
+      }
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 20px auto;
+        background: #fff;
+        padding: 17mm 18mm;
+        position: relative;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 16px;
+        border-bottom: 2px solid #1b354b;
+      }
+      .brand strong {
+        font-size: 24px;
+        letter-spacing: -1px;
+      }
+      .tag {
+        font-size: 10px;
+        color: #687783;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .meta {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        font-size: 11px;
+        color: #536573;
+        margin-top: 18px;
+      }
+      .eyebrow {
+        color: #286b4d;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 34px;
+      }
+      h1 {
+        font-size: 36px;
+        line-height: 1.12;
+        letter-spacing: -1px;
+        margin: 10px 0 18px;
+        max-width: 550px;
+      }
+      h2 {
+        font-size: 19px;
+        line-height: 1.3;
+        margin: 27px 0 12px;
+      }
+      h3 {
+        font-size: 14px;
+        margin: 0 0 6px;
+      }
+      p {
+        margin: 0 0 12px;
+      }
+      .lead {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #536573;
+      }
+      .notice {
+        border-left: 4px solid #ae7633;
+        background: #faf4e8;
+        padding: 13px 15px;
+        margin: 20px 0;
+      }
+      .notice p:last-child,
+      .step p:last-child {
+        margin-bottom: 0;
+      }
+      .steps {
+        display: grid;
+        gap: 12px;
+      }
+      .step {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        gap: 12px;
+        border-top: 1px solid #dce3e8;
+        padding-top: 12px;
+      }
+      .number {
+        width: 26px;
+        height: 26px;
+        text-align: center;
+        line-height: 26px;
+        background: #edf3f5;
+        border-radius: 50%;
+        font-weight: bold;
+      }
+      .muted {
+        color: #647481;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 15px 0;
+        text-align: left;
+        font-size: 11px;
+      }
+      th {
+        color: #fff;
+        background: #1b354b;
+        padding: 11px;
+        font-weight: normal;
+      }
+      td {
+        padding: 12px 11px;
+        border-bottom: 1px solid #dce3e8;
+        vertical-align: top;
+      }
+      td:nth-child(2) {
+        min-width: 128px;
+        white-space: nowrap;
+        font-weight: bold;
+      }
+      .check {
+        padding: 11px 0;
+        border-bottom: 1px solid #dce3e8;
+      }
+      .callout {
+        background: #edf4f0;
+        padding: 17px;
+        margin-top: 22px;
+      }
+      a {
+        color: #286b4d;
+        text-decoration: none;
+      }
+      .source {
+        font-size: 9px;
+        color: #647481;
+        margin-top: 18px;
+      }
+      .page:nth-of-type(2) h2 {
+        margin-top: 22px;
+        margin-bottom: 10px;
+      }
+      .page:nth-of-type(2) .check {
+        padding: 9px 0;
+      }
+      .page:nth-of-type(2) .callout {
+        margin-top: 18px;
+        padding: 15px;
+      }
+      .footer {
+        position: absolute;
+        bottom: 14mm;
+        left: 18mm;
+        right: 18mm;
+        display: flex;
+        justify-content: space-between;
+        font-size: 9px;
+        color: #647481;
+        border-top: 1px solid #dce3e8;
+        padding-top: 10px;
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        .page {
+          margin: 0;
+          height: 297mm;
+          min-height: 0;
+          break-after: page;
+        }
+        .page:last-child {
+          break-after: auto;
+        }
+      }
+      @media screen and (max-width: 820px) {
+        .page {
+          width: 100%;
+          padding: 24px;
+          margin: 0 0 16px;
+          min-height: 0;
+        }
+        .footer {
+          position: static;
+          margin-top: 28px;
+        }
+        h1 {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="page">
+      <div class="brand">
+        <strong>OtpremaOps</strong
+        ><span class="tag">Informativna ponuda · 28.09.2026.</span>
+      </div>
+      <div class="meta">
+        <div>
+          Za: [Naziv potencijalnog klijenta]<br />Od: [Naziv, PIB i kontakt vaše
+          firme]
+        </div>
+        <div>
+          Važenje predloga: do 28.10.2026.<br />Za dobavljače javnog sektora
+        </div>
+      </div>
+      <div class="eyebrow">Od izvoza podataka do jasnog operativnog reda</div>
+      <h1>Manje prepisivanja.<br />Jasniji tok otpremnica.</h1>
+      <p class="lead">
+        Operativni sloj za timove koji pripremaju veliki broj otprema iz ERP-a,
+        Excela ili više poslovnih sistema.
+      </p>
+      <p>
+        OtpremaOps učitava CSV/XLSX, prikazuje nepotpune podatke, vodi
+        evidenciju ispravki i daje timu pregled statusa. Posebno istražujemo
+        potrebe dobavljača zdravstvenih ustanova i drugih firmi koje isporučuju
+        javnom sektoru.
+      </p>
+      <div class="notice">
+        <h3>Trenutni status: DEMO / MOCK</h3>
+        <p>
+          Ova verzija simulira odgovore.
+          <strong
+            >Ne šalje dokumenta državnom sistemu i ne zamenjuje vaš važeći
+            postupak slanja.</strong
+          >
+          Pilot koristi samo testne ili anonimizovane podatke.
+        </p>
+      </div>
+      <h2>Tri koraka, sa jasnim granicama</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="number">1</span>
+          <div>
+            <h3>Procena procesa · 30–45 minuta · bez naknade</h3>
+            <p>
+              Prolazimo tipičnu otpremu, mesečni obim, postojeći softver i
+              uzorak izvoza. Dobijate kratku procenu da li dodatni operativni
+              sloj ima smisla.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="number">2</span>
+          <div>
+            <h3>Ograničen radni pilot · do 14 dana · bez naknade</h3>
+            <p>
+              Jedna organizacija, jedan format CSV/XLSX: podešavamo mapiranje,
+              prikazujemo red za ispravke i merimo ručni rad do pripremljenog
+              demo-dokumenta. Rezultat je nalaz o podacima i potrebnoj
+              integraciji.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="number">3</span>
+          <div>
+            <h3>Produkcija · tek posle tehničke provere i ugovora</h3>
+            <p>
+              Zvanični UBL/XML, državni demo i produkcioni API, odgovori i
+              statusi, obuka i podrška. Ovaj korak danas nije dostupna funkcija;
+              obim i cenu potvrđujemo nakon uspešnih demo-testova.
+            </p>
+          </div>
+        </div>
+      </div>
+      <p class="source">
+        Obaveza slanja za dobavljače javnog sektora primenjuje se od 01.01.2026.
+        Izvor:
+        <a
+          href="https://eotpremnica.efaktura.gov.rs/tekst/6563/najcesce-postavljena-pitanja.php"
+          >Ministarstvo finansija — najčešće postavljena pitanja</a
+        >.
+      </p>
+      <div class="footer">
+        <span>Predlog za razgovor · bez obaveze kupovine</span
+        ><span>01 / 02</span>
+      </div>
+    </section>
+    <section class="page">
+      <div class="brand">
+        <strong>OtpremaOps</strong
+        ><span class="tag">Obim, cena i sledeći korak</span>
+      </div>
+      <h2>Orijentacioni komercijalni model</h2>
+      <p class="lead">
+        Prvo dokazujemo korist na vašim podacima. Tek zatim dogovaramo
+        produkciono uvođenje.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Stavka</th>
+            <th>Cena bez PDV-a</th>
+            <th>Obim / uslov</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Procena i pilot</td>
+            <td>0 RSD</td>
+            <td>Koraci 1–2, bez obaveze kupovine.</td>
+          </tr>
+          <tr>
+            <td>Jednokratno uvođenje</td>
+            <td>od 120.000 RSD</td>
+            <td>
+              Jedna firma, jedan izvor podataka, standardni proces. Konačna cena
+              nakon uvida u izvoz.
+            </td>
+          </tr>
+          <tr>
+            <td>Operativna pretplata</td>
+            <td>od 14.900 RSD / mes.</td>
+            <td>
+              Do 1.000 otprema mesečno, uz dogovoreni nivo podrške.
+              Specifikacija i SLA u posebnom ugovoru.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="notice">
+        <p>
+          Cene za produkciju su <strong>predlog za razgovor</strong>, ne
+          obavezujuća ponuda za danas nedostupnu funkciju. Za mali broj
+          dokumenata državni portal ili postojeći ERP mogu biti ekonomičniji.
+        </p>
+      </div>
+      <h2>Šta mora da bude dokazano</h2>
+      <div class="check">
+        <h3>Korist tokom pilota</h3>
+        <p class="muted">
+          Beležimo mesečni broj otprema, prosečno vreme pripreme i tipične
+          greške. Dogovoreni format mora pouzdano da se uveze, a tim da dobije
+          pregled izuzetaka i merljivo smanjenje ručnog rada.
+        </p>
+      </div>
+      <div class="check">
+        <h3>Tehnička provera pre produkcije</h3>
+        <p class="muted">
+          Zvanična šema dokumenta, uspešan državni demo-API test, odbijanja,
+          tajmaut i ponovni pokušaji bez dupliranja. Zaštita pristupa i
+          prihvatanje procesa od strane vašeg tima.
+        </p>
+      </div>
+      <div class="check">
+        <h3>Jasan obim podrške</h3>
+        <p class="muted">
+          Podaci i posebni scenariji, odgovornosti obe strane, rokovi i nivo
+          podrške utvrđuju se u konačnoj specifikaciji i ugovoru.
+        </p>
+      </div>
+      <div class="callout">
+        <h3>Sledeći korak: kratka procena vašeg procesa</h3>
+        <p>
+          Pošaljite približan broj otprema mesečno, naziv sistema iz kog
+          izvozite podatke i kontakt osobe koja vodi proces otpreme.
+          Predložićemo termin za razgovor.
+        </p>
+        <p>
+          <strong>[Ime i prezime · funkcija · firma]</strong><br />[Poslovni
+          e-mail i telefon]
+        </p>
+      </div>
+      <p class="source">
+        Detaljna radna verzija: OFFER_SR.md. Pre slanja popuniti podatke
+        prodavca i klijenta i ponovo potvrditi važenje i komercijalni obim.
+      </p>
+      <div class="footer">
+        <span>Informativna ponuda · 28.09.2026.</span><span>02 / 02</span>
+      </div>
+    </section>
+  </body>
+</html>
